@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <div class="header-bar">
+               <table>
+                   <tr>
+                       <td> <a href="index.html">Home</a></td>
+                        <td><a href="index.html#deals">Deals</a></td>
+                        <td><a href="contact.html">Contact</a></td>
+                        <!-- <td><a onclick="makev()" style="cursor: pointer;">Search</a></td> -->
+                        <!-- <td><input type="text" placeholder="Enter" id="myInput" onkeyup="myfunction();" onfocus="vis();"> </td> -->
+                        <td><a href="">Filter</a></td>
+                        <td><a href="cart.html">My Cart</a></td>
+                        <td><a href="index.html#bottom">Sign Up</a></td>
+                   </tr>
+               </table>
+               <input type="text" id="myInput" onkeyup="myfunction();" style="position: fixed; top:1px; right: 100px;">
+               <a class="right" style="cursor: pointer;position: fixed;top: 0;right: 0;">Search</a>
+               <!-- <a href="cart.html" class="right" style="position: fixed;top:0;right:0;">My Cart</a></td> -->
+            </div>
+            
+                <div id = "snackbar">
+                    Added to cart...
+                </div>
+        <div style="display: flex;">
+            <div class="products">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="card" id="am-bpink" onmouseover="hovering('am-bpink',event)" onmouseout="notHovering('am-bpink',event)">
+                                <img src="Images/armchair-babypink.jpg" alt="arcmchair" style="width: 90%;">
+                                <h3>Modern Velvet Armchair</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" id="coatrack1" onmouseover="hovering('coatrack1',event)" onmouseout="notHovering('coatrack1',event)">
+                                <img src="Images/coatrack.jpg" alt="coatrack" style="width: 90%;">
+                                <h3>Gold Coatrack</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" id="lvrc-blue" onmouseover="hovering('lvrc-blue',event)" onmouseout="notHovering('lvrc-blue',event)">
+                                <img src="Images/livingroomcouch-blue.jpg" alt="potato" style="width: 90%;">
+                                <h3>Right Corner Living Room Couch</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="card" id="s-rng" onmouseover="hovering('s-rng',event)" onmouseout="notHovering('s-rng',event)">
+                                <img src="Images/sofa-redngrey.jpg" alt="banana" style="width: 90%;">
+                                <h3>Classic Sofa</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" id="am-bl" onmouseover="hovering('am-bl',event)" onmouseout="notHovering('am-bl',event)">
+                                <img src="Images/armchair-brownleather.jpg" alt="am-bl" style="width: 90%;">
+                                <h3>Genuine Leather Corner Sectional</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" id="bst-b" onmouseover="hovering('bst-b',event)" onmouseout="notHovering('bst-b',event)">
+                                <img src="Images/bedsidetable-black.jpg" alt="bst-b" style="width: 90%;">
+                                <h3>Two Toned Nightstand Table</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="card" id="am-b" onmouseover="hovering('am-b',event)" onmouseout="notHovering('am-b',event)">
+                                <img src="Images/armchair-blue.jpg" alt="am-b" style="width: 90%;">
+                                <h3>Chetna Fabric Armchair</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" id="bst-l" onmouseover="hovering('bst-l',event)" onmouseout="notHovering('bst-l',event)">
+                                <img src="Images/bedsidetable-light.jpg" alt="brinjal" style="width: 90%;">
+                                <h3>Contemporary Bedside Table</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" id="lvrc-green" onmouseover="hovering('lvrc-green',event)" onmouseout="notHovering('lvrc-green',event)">
+                                <img src="Images/livingroomcouch-green.jpg" alt="capsicum" style="width: 90%;">
+                                <h3>Serpentine Olive Sectional Sofa</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="card" id="s-l" onmouseover="hovering('s-l',event)" onmouseout="notHovering('s-l',event)">
+                                <img src="Images/sofa-light.jpg" alt="watermelon" style="width: 90%;">
+                                <h3>Anthropologie Eclective Couch</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" id="lvrc-w" onmouseover="hovering('lvrc-w',event)" onmouseout="notHovering('lvrc-w',event)">
+                                <img src="Images/livingroomcouch-white.jpg" alt="lvrc-w" style="width: 90%;">
+                                <h3>Tomtato</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" id="am-og" onmouseover="hovering('am-og',event)" onmouseout="notHovering('am-og',event)">
+                                <img src="Images/armchair-olivegreen.jpg" alt="am-og" style="width: 90%;">
+                                <h3>Mango</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="card" id="am-cpink" onmouseover="hovering('am-cpink',event)" onmouseout="notHovering('am-cpink',event)">
+                                <img src="Images/armchair-cherrypink.jpg" alt="watermelon" style="width: 90%;">
+                                <h3>Curvarella Velvet Chair</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" id="s-m" onmouseover="hovering('s-m',event)" onmouseout="notHovering('s-m',event)">
+                                <img src="Images/sofa-multi.jpg" alt="lvrc-w" style="width: 90%;">
+                                <h3>Quilted Cushion Living Room Sofa</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card" id="am-m" onmouseover="hovering('am-m',event)" onmouseout="notHovering('am-m',event)">
+                                <img src="Images/armchair-multi.jpg" alt="am-og" style="width: 90%;">
+                                <h3>Kennett Chair</h3>
+                                <p><button onclick="snackbarShowing()">Add to Cart</button></p>
+                            </div>
+                        </td>
+                    </tr>               
+                </table>
+            </div>
+            <div style="position: fixed;right: -10px; top:-10px">
+                <ul id="myUL">
+                    <li><a href="#am-m">Armchair, Multi Coloured</a></li>
+                    <li><a href="#am-og">ArmChair, Olive Green</a></li>
+                    <li><a href="#am-cpink">Armchair, Velvet</a></li>
+                    <li><a href="#bst-l">Bedside Table, Light</a></li>
+                    <li><a href="#coatrack1">Coatrack, gold</a></li>
+                    <li><a href="#am-b">Fabric Armchair</a></li>
+                    <li><a href="#am-bl">Leather Arm Chair</a></li>
+                    <li><a href="#s-l">Living Room Couch, Multi Coloured</a></li>
+                    <li><a href="#s-m">Living Room Couch, Quilted Cushion</a></li>
+                    <li><a href="#lvrc-w">Living Room Couch, White</a></li>
+                    <li><a href="#am-bpink">Modern Velvet ArmChair</a></li>
+                    <li><a href="#bst-b">Nightstand Table, Two Toned</a></li>
+                    <li><a href="#lvrc-blue">Right Corner Living Room Couch</a></li>
+                    <li><a href="#lvrc-green">Sectional Sofa, Olive Green</a></li>
+                    <li><a href="#s-rng">Sofa, Red & Grey</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bar"  style="text-align: right;padding:10px;font-weight: bolder;">
+            <p>Copyright@WoodTown</p>
+        </div>
+    </body>
+    <script>
+        // function mouselog(event){
+        // let d = new Date();
+
+        // // text.value += `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()} | ${event.type} [target: ${event.target.id}]\n`.replace(/(:|^)(\d\D)/, '$10$2');
+        // // text.scrollTop = text.scrollHeight;
+        // console.log(event.type + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds())
+        // }
+        // function vis() {
+        //     var elem = document.getElementsByTagName('li');
+        //     var b = "block"
+        //     for(var i=0;i<elem.length;i+=1){
+
+        //         elem[i].style.display = b;
+        //         // elem[i].style.zIndex = "2";
+        //         console.log(i);
+        //     }
+        // }
+        function myfunction(){
+            
+            // $('li').css('display','block');
+            // document.getElementsByTagName("li").style.display = "block";
+            var input,filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        // function makev() {
+        //     document.getElementById("myInput").style.visibility= "visible";
+        //     // document.getElementsByTagName("li").style.display = "block";
+        // }
+        function snackbarShowing() {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function(){
+                    x.className = x.className.replace("show", "");
+                }, 3000);
+            }
+        function hovering(id,event){
+                document.getElementById(id).style.padding = "15px"; 
+                document.getElementById(id).style.backgroundColor = "blanchedalmond"
+                let d = new Date();
+                console.log(event.type + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
+            }
+            function notHovering(id,event) {
+                document.getElementById(id).style.padding = "0px";
+                document.getElementById(id).style.backgroundColor = "white";
+                let d = new Date();
+                console.log(event.type + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
+            }
+    </script>
+</html>
